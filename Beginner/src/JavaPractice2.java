@@ -133,9 +133,11 @@ public class JavaPractice2
                 term = scan.nextLine();
             }
         }
+        //Store the current number at index i
         int current = 1;
         for(int i = 0; i < terms; i++)
         {
+        	//Applying the formula
             current = current * 2 + 3;
         }
         System.out.println(current);
