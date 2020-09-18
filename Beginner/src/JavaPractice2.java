@@ -135,7 +135,9 @@ public class JavaPractice2
         }
         //Store the current number at index i
         int current = 1;
-        for(int i = 0; i < terms; i++)
+        //Indexing in java starts with 0
+        //E.g. 5th term would be index 4 in java
+        for(int i = 0; i < terms-1; i++)
         {
         	//Applying the formula
             current = current * 2 + 3;
