@@ -16,6 +16,7 @@ public class JavaPractice2
         }
         System.out.println("Sum of all square numbers from 1^2 to 100^2: "+ sum);
 
+        
         //Task 2 --> How many of the numbers between 10 and 100 are factors of 74529?
         int count = 0;
         for(int i = 10;i<100;i++)
@@ -26,6 +27,7 @@ public class JavaPractice2
             }
         }
         System.out.println("Amount of numbers between 10 and 100 are factors of 74529: "+count);
+
 
         //Task 3 --> The following 5x5 box is made up of asterisks:
         //*****
@@ -67,6 +69,7 @@ public class JavaPractice2
             System.out.println("");
         }
 
+
         //Task 4 --> Task 3 but user is given the choice to have an empty box like following:
         //*****
         //*   *
@@ -86,6 +89,7 @@ public class JavaPractice2
                 am4 = scan.nextLine();
             }
         }
+
 
         //Task 5 --> Create a program which creates a right angled triangle using asterisks.
         //The user should choose the triangle’s size. As an example, a triangle of size 5 looks like this:
@@ -118,6 +122,16 @@ public class JavaPractice2
             System.out.println("");
         }
 
+
+        //Task 6 --> Create a program which creates an isosceles triangle using asterisks.
+        //For example, a triangle of size 5 looks like this:
+                //*
+               //***
+              //*****
+             //*******
+            //*********
+
+
         //Task 7 --> A number sequence follows the rule: double, then add 3. It starts with the numbers: 1, 5, 13, 29, 61.
         //What is the 40th number in the sequence?
         System.out.println("Enter nth term: ");
@@ -139,7 +153,7 @@ public class JavaPractice2
         //E.g. 5th term would be index 4 in java
         for(int i = 0; i < terms-1; i++)
         {
-        	//Applying the formula
+            //Applying the formula
             current = current * 2 + 3;
         }
         System.out.println(current);
