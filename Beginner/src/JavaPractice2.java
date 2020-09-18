@@ -111,8 +111,10 @@ public class JavaPractice2
         {
             for(int j = 0; j < i+1; j++)
             {
+                //Print * at the current count 'i' horizontally
                 System.out.print("*");
             }
+            //New line in the loop
             System.out.println("");
         }
 
