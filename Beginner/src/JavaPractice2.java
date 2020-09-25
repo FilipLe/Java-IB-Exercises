@@ -5,6 +5,7 @@ public class JavaPractice2
     public static int amount4;
     public static int amount5;
     public static int terms;
+    public static int amount6;
     public static void main(String[]args)
     {
         Scanner scan = new Scanner(System.in);
@@ -144,6 +145,48 @@ public class JavaPractice2
              //*******
             //*********
 
+        //1st row 4 spaces 1 star
+        //2nd row 3 spaces 3 stars
+        //3rd row 2 spaces 5 stars
+        //4th row 1 space  7 stars
+        //5th row 0 space  9 stars
+        //nth term to calculate amount of stars--> difference = 2 --> 2n-1
+        //nth term to calculate amount of spaces-->difference = -1 --> -n+5
+
+        //INPUT = 6
+                //*
+               //***
+              //*****
+             //*******
+            //*********
+           //***********
+
+        //1st row 5 spaces 1 star
+        //2nd row 4 spaces 3 stars
+        //3rd row 3 spaces 5 stars
+        //4th row 2 space  7 stars
+        //5th row 1 space  9 stars
+        //5th row 0 space  11 stars
+        //nth term to calculate amount of stars--> difference = 2 --> 2n-1
+        //nth term to calculate amount of spaces-->difference = -1 --> -n+6
+
+        //Formulas in general:
+        //Amount of stars: 2n-1
+        //Amount of spaces: -n+(input)
+        
+        System.out.println("Enter amount: ");
+        String am6 = scan.nextLine();
+        boolean statusAmount6 = false;
+        while(statusAmount6==false){
+            try{
+                amount6 = Integer.parseInt(am6);
+                statusAmount6 = true;
+            }catch (NumberFormatException amount6) {
+                statusAmount6=false;
+                System.out.println("Please input integer value: ");
+                am6 = scan.nextLine();
+            }
+        }
 
         //Task 7 --> A number sequence follows the rule: double, then add 3. It starts with the numbers: 1, 5, 13, 29, 61.
         //What is the 40th number in the sequence?
