@@ -189,6 +189,8 @@ public class JavaPractice2
         }
         for(int i = 0; i < amount6; i++)
         {
+        	for(int x = 0; x < -i+amount6;x++)
+        		System.out.print(" ");
             //2n-1 formula for the stars
             for(int j = 0; j < 2*i+1; j++)
             {
