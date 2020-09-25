@@ -16,7 +16,7 @@ public class JavaPractice2
         }
         System.out.println("Sum of all square numbers from 1^2 to 100^2: "+ sum);
 
-        
+
         //Task 2 --> How many of the numbers between 10 and 100 are factors of 74529?
         int count = 0;
         for(int i = 10;i<100;i++)
@@ -89,7 +89,20 @@ public class JavaPractice2
                 am4 = scan.nextLine();
             }
         }
-
+        for(int i = 0; i < amount4; i++)
+        {
+            for(int j = 0; j < amount4; j++)
+            {
+                if(i==0||j==0||i==amount4-1||j==amount4-1)
+                    //Print all stars if it's 1st row or last row
+                    System.out.print("*");
+                else
+                    //If not 1st or last row, print space in between
+                    System.out.print(" ");
+            }
+            //Next Line (go down)
+            System.out.println("");
+        }
 
         //Task 5 --> Create a program which creates a right angled triangle using asterisks.
         //The user should choose the triangle’s size. As an example, a triangle of size 5 looks like this:
