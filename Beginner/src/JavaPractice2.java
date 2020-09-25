@@ -189,6 +189,7 @@ public class JavaPractice2
         }
         for(int i = 0; i < amount6; i++)
         {
+        	//-n+input formula for the spaces before the stars
         	for(int x = 0; x < -i+amount6;x++)
         		System.out.print(" ");
             //2n-1 formula for the stars
