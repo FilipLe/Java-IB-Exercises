@@ -173,7 +173,7 @@ public class JavaPractice2
         //Formulas in general:
         //Amount of stars: 2n-1
         //Amount of spaces: -n+(input)
-        
+
         System.out.println("Enter amount: ");
         String am6 = scan.nextLine();
         boolean statusAmount6 = false;
@@ -186,6 +186,17 @@ public class JavaPractice2
                 System.out.println("Please input integer value: ");
                 am6 = scan.nextLine();
             }
+        }
+        for(int i = 0; i < amount6; i++)
+        {
+            //2n-1 formula for the stars
+            for(int j = 0; j < 2*i+1; j++)
+            {
+                //Print * at the current count 'i'x2 + 1 horizontally
+                System.out.print("*");
+            }
+            //New line in the loop
+            System.out.println("");
         }
 
         //Task 7 --> A number sequence follows the rule: double, then add 3. It starts with the numbers: 1, 5, 13, 29, 61.
